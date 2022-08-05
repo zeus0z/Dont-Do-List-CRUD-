@@ -4,60 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: 0;
-            
-        }
-
-        body {
-            height: 100vh;
-            background-color: antiquewhite;
-        }
-        #gatos {
-            margin: auto;
-            margin-top: 10rem;
-            width: 400px;
-            height: 400px;
-            background-color: brown;
-            box-shadow: 5px 10px 20px black;
-        }
-
-        button {
-            
-            background-color: brown;
-            color: white;
-            padding: 10px 20px;
-            margin: 3rem;
-            border-radius: 10px;
-            border: 2px solid black;
-            box-shadow: 5px 10px 20px black;
-            
-        }
-
-        .wrapper {
-            display: flex;
-            flex-direction: column;
-            align-items:center ;
-            
-            
-        }
-    </style>
-</head>
+    <link rel="stylesheet" href="./style_dont_do.css">
+        <title>Document</title>
+   </head>
 <body>
-    <div class="wrapper">
-        <img id ="catImg" src="" alt="">
-        <button id="catButton" type="button"> NOVO GATO </button>
-    </div>
+    
+ 
+    <header>
+        <h1>Don't Do List</h2>
+        <h3>Anote os erros cometidos, para evitar que sejam repetidos!</h3>
+    </header>
+   
+    
 
-    <div class="teste"></div>
+    <form id="myForm">
+        <input id="input_field" type="text" placeholder="E aí, como você errou hoje?">
+        <button id="create_button"  class="button">ADICIONAR</button>
+    </form>
+
+
+    <section id="item_list">
+
+        <h4>Erros cometidos</h2>
+
+        <div id="items">
+       
+            <div class="item">
+
+                <input id="itemContent" type="text" readonly value="Olá Mundo">
+
+                <div class="actions">
+                    <button id="edit_button" class="button">EDITAR</button>
+                    <button id="delete_button"> APAGAR </button>
+                </div>
+            </div>
+                
+        
+        </div>
+
+    </section>
 
 
 
 
-    <script src="script.js"></script>
+    <footer>&copy Zeus Amorim</footer>
+
+
+
+
+
+
+
+
+
+    <script src="dont-do.js"></script>
 </body>
 </html>
