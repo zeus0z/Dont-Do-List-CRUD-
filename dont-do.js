@@ -53,7 +53,7 @@ let criarItem = () => {
     ITEM_LIST.innerHTML += `
     <div class="item">
 
-        <input type="text" readonly value=${currentItem.text}>
+        <input type="text" readonly value="${currentItem.text}">
 
         <div class="actions">
             <button onClick="editarItem(this)" id="edit_button" class="button">EDITAR</button>
@@ -81,7 +81,7 @@ let salvarItem =(i) => {
 let editarItem = (i) => {
         
     let cont = i.parentElement.previousElementSibling;
-    cont.setAttribute("value",+ cont["text"]);
+    cont.setAttribute("value", cont.value);
     cont.removeAttribute("readonly");
     cont.focus();
 

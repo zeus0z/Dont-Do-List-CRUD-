@@ -22,7 +22,8 @@ Display Flex já começa no body*/
 
 body {
     min-height: 100vh;
-    background-color: var(--dark);
+    background-image: linear-gradient(to bottom, var(--darkest) , var(--dark));
+    /* background-color: var(--dark); */
     color: var(--light);
     display: flex;
     flex-direction: column;
@@ -197,23 +198,11 @@ form {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /*Pra fixar o footer: coloca uma margem no body que seja do tamanho do seu footer*/
 
 footer{
     width: 100%;
-    background-color: var(--darker);
+    background-color: var(--darkest);
     position:fixed;
     bottom: 0;
     margin-bottom: 0;
